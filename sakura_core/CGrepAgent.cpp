@@ -1,4 +1,5 @@
 #include "StdAfx.h"
+#define TIME_MEASURE
 #include "CGrepAgent.h"
 #include "CGrepEnumKeys.h"
 #include "CGrepEnumFilterFiles.h"

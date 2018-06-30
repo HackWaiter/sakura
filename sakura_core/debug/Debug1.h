@@ -18,7 +18,7 @@
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 //                   メッセージ出力：実装                      //
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
-#if defined(_DEBUG) || defined(USE_RELPRINT)
+#if 1
 void DebugOutW( LPCWSTR lpFmt, ...);
 void DebugOutA( LPCSTR lpFmt, ...);
 #endif	// _DEBUG || USE_RELPRINT
@@ -30,7 +30,7 @@ void DebugOutA( LPCSTR lpFmt, ...);
 	MYTRACEはリリースモードではコンパイルエラーとなるようにしてあるので，
 	MYTRACEを使う場合には必ず#ifdef _DEBUG ～ #endif で囲む必要がある．
 */
-#ifdef _DEBUG
+#if 1
 	#ifdef _UNICODE
 	#define MYTRACE DebugOutW
 	#else

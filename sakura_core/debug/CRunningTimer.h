@@ -72,14 +72,14 @@ protected:
 	char	m_szText[100];	//!< タイマー名
 	int		m_nDeapth;	//!< このオブジェクトのネストの深さ
 
-#ifdef _DEBUG
+#if 1
 	static int m_nNestCount;
 #endif
 };
 
 //	Oct. 16, 2002 genta
 //	#ifdef _DEBUG～#endifで逐一囲まなくても簡単にタイマーのON/OFFを行うためのマクロ
-#if defined(_DEBUG) && defined(TIME_MEASURE)
+#if defined(TIME_MEASURE)
   #define MY_TRACETIME(c,m) (c).WriteTrace(m)
   #define MY_RUNNINGTIMER(c,m) CRunningTimer c(m)
 #else

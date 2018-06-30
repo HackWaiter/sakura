@@ -34,7 +34,7 @@ void Test()
 }
 #endif
 
-#if defined(_DEBUG) || defined(USE_RELPRINT)
+#if 1
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 //                   メッセージ出力：実装                      //

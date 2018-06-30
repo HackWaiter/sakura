@@ -19,7 +19,7 @@
 #include "debug/CRunningTimer.h"
 #include "_main/global.h"
 
-#ifdef _DEBUG
+#if 1
 
 #pragma comment(lib, "winmm.lib")
 
